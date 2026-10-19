@@ -31,25 +31,31 @@ Factor in R groups values based on the categories specified by the levels argume
 Lists in R can store groups of values with different data types. The length counts the top-level components, so this list has a length of 2 because it contains scores and label.
 
 ## P09
-Replace this line with the rule that decides this case.
+A data frame is a list of equal-length columns with row and column dimensions.
+Because of this, its type is list and its length equals its 2 columns, giving it dimensions of 2x2.
 
 ## P10
-Replace this line with the rule that decides this case.
+A matrix and an array are atomic vectors with a dim attribute.
+A matrix is an underlying atomic vector with dimensions attached, which stores the 6 integers across 2 rows and 3 columns, giving dim = 2x3.
 
 ## P11
-Replace this line with the rule that decides this case.
+NA is a missing value. It has no explicit given type, and has a length of 1.
 
 ## P12
-Replace this line with the rule that decides this case.
+An atomic vector stores one basic type.
+Since 9 is written without an L suffix, R stores it as a double with a length of 1.
 
 ## P13
-Replace this line with the rule that decides this case.
+According to the coercion rule, since 2.5 is a double which ranks highest in the vector, R converts all values into doubles, resulting in [1, 2.5, 3].
 
 ## P14
-Replace this line with the rule that decides this case.
+An atomic vector stores one basic type.
+Since the numbers lack L suffixes, R defaults to storing every element as a double, resulting in a vector of length 4.
 
 ## P15
-Replace this line with the rule that decides this case.
+A matrix and an array are atomic vectors with a dim attribute.
+An array is an underlying atomic vector with dimensions attached, which stores 8 integer values structured across 3 dimensions of length 2, giving dim = 2x2x2.
 
 ## P16
-Replace this line with the rule that decides this case.
+Index 0 selects nothing and returns a zero-length result of the same atomic type.
+Since [] contains no elements, it returns a zero-length result while keeping its integer type.
