@@ -1,6 +1,3 @@
 # Vector and Scalar Evaluation
 
-Replace this paragraph after your checks pass. Trace one input, including the
-missing value, through `clean_scores_vector()` and `clean_scores_scalar()`.
-Compare the two evaluation models, identify where recycling would change the
-answer, and explain which implementation you would keep in an R program.
+Using the sample scores of Ada = 8, Grace = NA, Linus = 12, and Barbara = 4, both cleaning functions produce the same final scores: 16, 0, 20, and 8. In clean_scores_vector(), ifelse() processes the scores together, replacing the missing value with 0 and doubling the other scores. The next line replaces any result greater than 20 with 20, so Linus' doubled score of 24 becomes 20. In clean_scores_scalar(), the for loop processes each score individually. It checks whether the score is missing, replaces it with 0 if necessary, and otherwise doubles it and caps it at 20. Both functions preserve the student names and return identical results.
